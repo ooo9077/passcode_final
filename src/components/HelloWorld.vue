@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%;height:100%;background: #0984BD;">
+  <div style="width:320px;height:667px;background: #0984BD;">
     <div style="text-align: left; position:relative;width:100%;bottom:2%;"> 
       <span style="position:relative;display: inline-block; left:5%; width:70%;">
         <div style="color:white;font-size:120%;position:relative;top:0px;">姓名：{{full_name}}</div>
