@@ -16,7 +16,7 @@
 
         <div style="text-align:center;">
         <div style="color:green;position:relative;display: inline-block;font-weight:bold">{{currentdate}}</div>
-        <div style="color:green;font-size:250%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
+        <div style="color:green;font-size:300%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
         <div style="color:green;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
         </div>
         <br>
