@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div style="text-align: left;"> <span style="position:relative;display: inline-block; left:25%; width:60%;">
+    <div style="text-align: left;"> 
+        <span style="position:relative;display: inline-block; left:5%; width:65%;">
         <p style="color:white;font-size:150%">姓名：{{full_name}}</p>
         <p style="color:white;font-size:150%">部门：{{org_name}}</p>
     </span> 
-    <img src="../assets/fuda-logo-blue.png" style="width:50%;height:50%;padding:0px;position:float;top:5%;"/>
+    <img src="../assets/fuda-logo-blue.png" style="width:30%;height:30%;padding:0px;position:relative;top:20px;"/>
     </div>
     
     <div class="qrcanvas">
@@ -14,7 +15,7 @@
         <h3 style="color:green;">{{currentdate}}</h3>
         <h3 style="color:green;font-size:300%;">{{currentsec}}</h3>
         <h3 style="color:green;">{{currenthour}}</h3><br>
-        <div style="display: inline-block;margin: 0 10px;text-align: center; width:50%;height:50%"  id="qrcode" ref="qrcode"></div>
+        <div style="display: inline-block;margin: 0 10px;text-align: center;"  id="qrcode" ref="qrcode"></div>
         <p style="text-align: center; color:white;">{{currentTime}}</p>
         <marquee><span style="font-weight: bolder;font-size: 40px;color: green;">{{large_word}}</span></marquee>
         <p style="position:relative;width:95%;color:green;text-align:left;left:5%;font-size:100%;">未见异常，允许通行，请主动出示，配合检测，并做好自我防护，出行前请确认。</p>
@@ -24,11 +25,11 @@
         </div>
     </div>
     <br>
-    <div style="position: relative; left:37%;border: 1px solid #FFF; border-radius: 5px; width:15%;color:white;font-size:150%" v-on:click="inputBoxHideShow()">每日健康填报</div>
+    <div style="position: relative; left:25%;border: 1px solid #FFF; border-radius: 5px; width:40%;color:white;font-size:120%" v-on:click="inputBoxHideShow()">每日健康填报</div>
     <br>
     <input v-model="full_name" placeholder="姓名" v-if="full_name_show">
     <input v-model="org_name" placeholder="部门" v-if="org_name_show">
-    <input v-model="large_word" placeholder="滚动字幕" v-if="large_word_show">
+    <input v-model="large_word" placeholder="滚动文字" v-if="large_word_show">
   </div>
 </template>
 
@@ -118,7 +119,7 @@ export default {
             inputBoxHideShow(){
               this.full_name_show=!(this.full_name_show);
               this.org_name_show=!(this.org_name_show);
-              this.large_word_show = !(this.large_word_show);
+              this.large_word_show=!(this.large_word_show);
             }    
         },
     mounted() {
