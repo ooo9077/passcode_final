@@ -5,8 +5,9 @@
         <div style="color:white;font-size:120%;position:relative;top:0px;">姓名：{{full_name}}</div>
         <br>
         <div style="color:white;font-size:120%;position:relative;top:0px;">部门：{{org_name}}</div>
+        <br>
       </span> 
-      <img src="../assets/fuda-logo-blue.png" style="width:25%;height:25%;position:relative;top:8px;"/>
+      <img src="../assets/fuda-logo-blue.png" style="width:25%;height:25%;position:relative;top:5px;"/>
     </div>
     
     <div class="qrcanvas">
