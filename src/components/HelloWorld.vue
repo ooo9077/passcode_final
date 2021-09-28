@@ -6,7 +6,7 @@
         <br>
         <div style="color:white;font-size:120%;position:relative;top:0px;">部门：{{org_name}}</div>
       </span> 
-      <img src="../assets/fuda-logo-blue.png" style="width:25%;height:25%;position:relative;top:10px;"/>
+      <img src="../assets/fuda-logo-blue.png" style="width:25%;height:25%;position:relative;top:8px;"/>
     </div>
     
     <div class="qrcanvas">
