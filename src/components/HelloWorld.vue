@@ -19,7 +19,7 @@
         <div style="color:green;font-size:300%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
         <div style="color:green;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
         </div>
-        <div style="display: inline-block;text-align: center;position:relative;left:25%" id="qrcode" ref="qrcode"></div>
+        <div style="display: inline-block;text-align: center;position:relative;left:27%" id="qrcode" ref="qrcode"></div>
         
         <marquee><div style="font-size: 300%;color: green;position:relative;">{{large_word}}</div></marquee>
         <div style="position:relative;width:85%;color:green;text-align:left;left:10%;font-size:80%;position:relative;">未见异常，允许通行，请主动出示，配合检测，并做好自我防护，出行前请确认。</div>
