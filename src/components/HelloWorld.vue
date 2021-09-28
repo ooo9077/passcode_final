@@ -140,7 +140,7 @@ a {
 .qrcanvas{
     background: white;
     position: relative;
-    left: 5%;
+    left: -5%;
     width: 90%;
     
     border-top-right-radius:10px;
