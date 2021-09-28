@@ -4,7 +4,7 @@
         <p style="color:white;font-size:150%">姓名：{{full_name}}</p>
         <p style="color:white;font-size:150%">部门：{{org_name}}</p>
     </span> 
-    <img src="../assets/fuda-logo-blue.png" style="width:9%;height:9%;padding:0px;position:float;top:5%;"/>
+    <img src="../assets/fuda-logo-blue.png" style="width:50%;height:50%;padding:0px;position:float;top:5%;"/>
     </div>
     
     <div class="qrcanvas">
@@ -14,7 +14,7 @@
         <h3 style="color:green;">{{currentdate}}</h3>
         <h3 style="color:green;font-size:300%;">{{currentsec}}</h3>
         <h3 style="color:green;">{{currenthour}}</h3><br>
-        <div style="display: inline-block;margin: 0 10px;text-align: center;"  id="qrcode" ref="qrcode"></div>
+        <div style="display: inline-block;margin: 0 10px;text-align: center; width:50%;height:50%"  id="qrcode" ref="qrcode"></div>
         <p style="text-align: center; color:white;">{{currentTime}}</p>
         <marquee><span style="font-weight: bolder;font-size: 40px;color: green;">{{large_word}}</span></marquee>
         <p style="position:relative;width:95%;color:green;text-align:left;left:5%;font-size:100%;">未见异常，允许通行，请主动出示，配合检测，并做好自我防护，出行前请确认。</p>
@@ -103,8 +103,6 @@ export default {
             qrcode(){
                 var qrtext = this.getRandomRagne(90000,40000);
                 let qrcode = new QRCode("qrcode",{
-                    width:232,
-                    height:232,
                     text:qrtext
                 });
             },
@@ -162,8 +160,8 @@ a {
 .qrcanvas{
     background: white;
     position: relative;
-    left: 25%;
-    width: 42%;
+    left: 5%;
+    width: 90%;
     border-top-right-radius:10px;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
