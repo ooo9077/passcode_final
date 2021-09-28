@@ -1,11 +1,11 @@
 <template>
   <div>
     <div style="text-align: left;"> 
-        <span style="position:relative;display: inline-block; left:5%; width:65%;">
+      <span style="position:relative;display: inline-block; left:5%; width:65%;">
         <p style="color:white;font-size:150%">姓名：{{full_name}}</p>
         <p style="color:white;font-size:150%">部门：{{org_name}}</p>
-    </span> 
-    <img src="../assets/fuda-logo-blue.png" style="width:30%;height:30%;padding:0px;position:relative;top:20px;"/>
+      </span> 
+      <img src="../assets/fuda-logo-blue.png" style="width:30%;height:30%;padding:0px;position:relative;top:20px;"/>
     </div>
     
     <div class="qrcanvas">
@@ -53,9 +53,6 @@ export default {
           imagepath:"passqrcode/passqrcode/static/123455.png",
           filter:"color"
       },
-      full_name:'',
-      org_name:'',
-      large_word:'',
       full_name_show:false,
       org_name_show:false,
       large_word_show:false,
@@ -80,20 +77,7 @@ export default {
             
         },
     methods: {
-            getRandomRagne(max,min){
-                return Math.random() * (max-min) + min + '';
-            },
-            randomString(len) {
-            　　len = len || 32;
-            　　var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
-            　　var maxPos = $chars.length;
-            　　var pwd = '';
-            　　for (var i = 0; i < len; i++) {
-            　　　　pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
-            　　}
-            　　return pwd;
-            },
-                        //时间过滤加0
+            //时间过滤加0
             appendZero(obj) {
                 if (obj < 10) {
                     return "0" + obj;
@@ -102,14 +86,12 @@ export default {
                 }
             },
             qrcode(){
-                var qrtext = this.getRandomRagne(90000,40000);
                 let qrcode = new QRCode("qrcode",{
-                    text:qrtext
+                    text:"helloworld!"
                 });
             },
             barcode(){
-                var bartext = this.randomString(9);
-                let barcode=new JsBarcode('#barcode', bartext,{
+                let barcode=new JsBarcode('#barcode', 'HelloWorld',{
                     format:'CODE39',
                     lineColor:'#000',
                     width:3,
