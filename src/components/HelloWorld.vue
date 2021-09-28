@@ -29,7 +29,7 @@
     <br>
     <input v-model="full_name" placeholder="姓名" v-if="full_name_show">
     <input v-model="org_name" placeholder="部门" v-if="org_name_show">
-    <input v-model="large_word" placeholder="滚动文字" v-if="large_word_show">
+    <input v-model="large_word" placeholder="滚动文字" v-if="large_word_show"><!--更新滚动文字-->
   </div>
 </template>
 
