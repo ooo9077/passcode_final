@@ -31,7 +31,7 @@
         </div>
     </div>
     <br>
-    <div style="position: relative;font-weight:bold; left:25%;border: 1px solid #FFF; border-radius: 5px; width:40%;color:white;font-size:120%;text-align:center;" v-on:click="inputBoxHideShow()">每日健康填报</div>
+    <div style="position: relative;font-weight:bold; left:28%;border: 1px solid #FFF; border-radius: 5px; width:40%;color:white;font-size:120%;text-align:center;" v-on:click="inputBoxHideShow()">每日健康填报</div>
     <br>
     <input v-model="full_name" placeholder="姓名" v-if="full_name_show">
     <input v-model="org_name" placeholder="部门" v-if="org_name_show">
