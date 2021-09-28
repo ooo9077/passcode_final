@@ -19,7 +19,7 @@
         <div style="color:green;font-size:200%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
         <div style="color:green;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
         </div>
-        <br>
+        <br><br>
         <div style="display: inline-block;text-align: center;position:relative;left:27%" id="qrcode" ref="qrcode"></div>
         
         <marquee><div style="font-size: 300%;color: green;position:relative;">{{large_word}}</div></marquee>
