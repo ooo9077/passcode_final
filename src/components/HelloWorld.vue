@@ -15,9 +15,9 @@
         <img id="barcode" style="width:95%;position:relative;left:3%;"/>
 
         <div style="text-align:center;">
-        <div style="color:#1E9243;position:relative;display: inline-block;font-weight:bold">{{currentdate}}</div>
-        <div style="color:#1E9243;font-size:300%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
-        <div style="color:#1E9243;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
+        <div style="color:#1E9243;font-size:150%;position:relative;display: inline-block;font-weight:bold">{{currentdate}}</div>
+        <div style="color:#1E9243;font-size:350%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
+        <div style="color:#1E9243;font-size:150%;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
         </div>
         <br>
         <div style="display: inline-block;text-align: center;position:relative;left:27%" id="qrcode" ref="qrcode"></div>
@@ -27,7 +27,7 @@
         <br>
         <div style="position: relative; left:5%">
             <img src="../assets/yikatong-logo.jpg" style="position:relative;left:5%;bottom:8px;width:6%;height:6%;"/>
-            <div style="display: inline-block;text-align:left;position: relative; left:5%">一卡通<br>适用于所有场景</div>
+            <div style="font-size:90%;display: inline-block;text-align:left;position: relative; left:5%">一卡通<br>适用于所有场景</div>
             <br><br>
         </div>
     </div>
@@ -169,3 +169,4 @@ a {
     border-bottom-right-radius:10px;
 }
 </style>
+
