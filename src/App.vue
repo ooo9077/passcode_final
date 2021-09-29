@@ -1,5 +1,6 @@
 <template>
-  <div id="app" style="background: #0984BD;">
+  <!--<div id="app" style="background: #0984BD;">-->
+  <div>
     <!--<img src="./assets/logo.png">-->
     <router-view/>
   </div>
