@@ -112,8 +112,8 @@ export default {
             qrcode(){
                 var qrtext = this.RandomRangeNumber(60000,10000)+'';
                 let qrcode = new QRCode("qrcode",{
-                    width:150,
-                    height:150,
+                    width:120,
+                    height:120,
                     text:qrtext//在此决定二维码样式
                 });
             },
