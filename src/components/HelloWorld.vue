@@ -114,12 +114,12 @@ export default {
                 let qrcode = new QRCode("qrcode",{
                     width:150,
                     height:150,
-                    text:qrtext
+                    text:qrtext//在此决定二维码样式
                 });
             },
             barcode(){
                 var bartext = this.RandomString(7);
-                let barcode=new JsBarcode('#barcode', bartext,{
+                let barcode=new JsBarcode('#barcode', bartext,{//bartext 决定条形码内容
                     format:'CODE39',
                     lineColor:'#000',
                     width:3,
