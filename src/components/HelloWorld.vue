@@ -17,7 +17,7 @@
         <div style="text-align:center;">
         <div style="color:#1E9243;font-size:180%;position:relative;display: inline-block;font-weight:bold">{{currentdate}}</div>
         <div style="color:#1E9243;font-size:350%;position:relative;display: inline-block;font-weight:bold">{{currentsec}}</div>
-        <div style="color:#1E9243;font-size:1850%;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
+        <div style="color:#1E9243;font-size:180%;position:relative;display: inline-block;font-weight:bold">{{currenthour}}</div>
         </div>
         <br>
         <div style="display: inline-block;text-align: center;position:relative;left:27%" id="qrcode" ref="qrcode"></div>
